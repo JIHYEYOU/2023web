@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*reset*/
+        *{margin:0;padding: 0;box-sizing: border-box;}
+        a:link,a:visited{text-decoration: none;color: #444;}
+
+        li{list-style: none;}
+        .clearfix:after{content:"";display: block;clear: both;}
+
+        /*header*/
+        /* *<tag <class < id <inline style < !important  */
+        header#hd{width: 1000px;margin: 0 auto;background-color: #0f0;}
+        .logo{width: 300px;background-color: #f00;margin-top: 10px;margin-left:50px;margin-bottom:10px;text-align: center;float: left;}
+        .menu li{float: right;width:600px;}
+        .menu li a{display: flex;background-color:skyblue; text-align: center; line-height: 50px;justify-content: center; margin-top: 10px; margin-right: 10px;margin-bottom: 10px;
+        }
+        .menu li a:hover{background-color: #00f; color:#fff; transition: 0.3s;}
+        
+
+        /*container*/
+        .container{
+            width: 1000px; margin: 0 auto;
+        }
+        .container .aside,
+        .container .content{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+
+        .container .aside{
+            width: 300px;background-color: #ff0; }
+        /* } display: flex;justify-content: center;align-items: center;float: left; */
+        .container .content{
+            width: 680px;  
+            background-color: #0ff;float: right;}
+        /* } float: left;display: flex;justify-content: center;align-items: center */
+
+        #ft{
+            width: 1000px;height: 100px;margin: 0 auto;display: flex;justify-content: center;align-items: center;background-color: violet;}
+        /* } text-align: center; line-height:100px */
+        .copyright{width: 0px;background-color: #fff;margin-top: 10px;margin-left:50px;margin-bottom:10px;text-align: center;float: left;}
+        .sns{width: 250px;background-color: #f0f;margin-top: 10px;margin-right:50px;margin-bottom:10px;text-align: center;float: right;}
+
+     
+</style>
+</head>
+<body>
+
+    <header id="hd">
+        <h1 class="logo"><a href="#">logo</a></h1>
+        <nav class="menu">
+            <ul class="clearfix">
+               <li><a href="#">menu</a></li>
+            </ul>
+
+    </header>
+    <div class="container clearfix">
+        <aside class="aside">aside</aside>
+        <section class="content">content</section>
+    </div>
+    <footer id="ft">
+    <h1 class="logo"><a href="#">logo</a></h1>
+    <h2 class="copyright"><a href="#">copyright</a></h2>
+    <h3 class="sns"><a href="#">sns</a></h3>
+
+    </footer>
+    
+</body>
+</html>
